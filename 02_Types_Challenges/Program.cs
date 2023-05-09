@@ -50,3 +50,8 @@ string yearString = "2023";
 int yearNumber = int.Parse(yearString); 
 Console.WriteLine(yearNumber);
 
+//uint unsignedInt 32;
+//long signedInt64;
+//short signedInt16;
+
+
