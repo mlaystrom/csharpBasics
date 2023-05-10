@@ -22,3 +22,4 @@ Console.WriteLine("The name is {1}, {0}.", firstName, lastName);
 // String Interpolation ($): It takes out the indexes and allows you to simply put a variable directly into the string.
 string interpolationResult =$"My name is still {firstName} {lastName}";
 Console.WriteLine(interpolationResult);
+
