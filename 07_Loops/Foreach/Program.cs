@@ -44,3 +44,29 @@ foreach (int number in numberCollection)
     Console.WriteLine ($"{number} is neutral.");
  }
 }
+
+//more practice
+/*
+Before moving on, let's have you write another foreach loop.
+
+This time let's add some more logic to it. Complete the following steps:
+
+Declare a new array of integers
+Iterate over this array with a foreach loop
+Write to the console whether or not the numbers are negative or positive.
+
+*/
+//my declaration of an array of integers
+int[] yowzaNumbers = new int[] { 22, 43, 64, 85, -30, -90};
+
+//foreach loop  iterating over array  (number is the variable that holds the value)
+foreach( int number in yowzaNumbers)
+{
+   if (number < 0)
+   {
+      Console.WriteLine($" {number} is a negative number");
+   }
+   else{
+      Console.WriteLine($"{number } is a positive number");
+   }
+}

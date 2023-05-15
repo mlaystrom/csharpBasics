@@ -30,3 +30,11 @@ else
     output = "You're too young to vote";
 }
 Console.WriteLine(output);
+
+//practice
+
+bool correct = true;
+int pointsEarned = correct ? 10 : 0;
+{
+    Console.WriteLine(pointsEarned);
+}

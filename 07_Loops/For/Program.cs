@@ -24,6 +24,24 @@ for (int i = 0; i < number; i++)
 //exercise: prompt user for a number to count to from zero, take the input from the user and write to the console all numbers from zero to the number given
 //This should be inclusive, you'll write both zero and the number they gave you to the console
 
+Console.Write("Pick a number to have me count to:");
+
+string? userNumber=Console.ReadLine();
+
+int numberCount = int.Parse(userNumber);
+
+for (int i = 0; i <= numberCount; i++)
+{
+    Console.WriteLine (i);
+}
+
+
+
+
+
+
+
+/*
 Console.WriteLine("Pick a number you'd like me to count to.");
 string? userInput = Console.ReadLine();
  int target = int.Parse(userInput); //int.Parse because changing from string to int
@@ -32,3 +50,4 @@ string? userInput = Console.ReadLine();
  {
     Console.WriteLine(i);
  }
+ */

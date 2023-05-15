@@ -70,7 +70,7 @@ switch (lowercaseFriend)
 
 Console.WriteLine("How were you feeling yesterday on a scale of 1-5?");
 string? ratingInput = Console.ReadLine();
-int yesterdayRating = int.Parse(ratingInput);//because we get a string from the Console.Readline() expression we need to convert it to an integer, use the int.Parse()
+int yesterdayRating = int.Parse(ratingInput ??"0");//because we get a string from the Console.Readline() expression we need to convert it to an integer, use the int.Parse()
 
 string response = yesterdayRating switch
 {
@@ -85,7 +85,7 @@ Console.WriteLine(response);
 
 //challenge is to compare these two values(feelingRating and yesterdayRating) and display how much better or worse they are feeling today than yesterday
 
-int todayRating = int.Parse(feelingRating);
+int todayRating = int.Parse(feelingRating ?? "0"); //the ?? "0" is added because the in.Parse is saying the string could be null and if it is, "0" as response
 int ratingDifference = todayRating - yesterdayRating;
 
 string output = ratingDifference switch
